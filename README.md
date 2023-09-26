@@ -10,3 +10,4 @@ Supplementary scripts:
 - `make_rgb`: Map model-generated grayscale output into a color palette for better visualization
 - `split.py`: Test/Train split
 - `tif_to_jpeg.py`: Changing tif files to jpeg for easy visualization of images
+- `flip_color.py`: Using color palette chaging methods to visualize and inspect noisy images to get a better view of cells
