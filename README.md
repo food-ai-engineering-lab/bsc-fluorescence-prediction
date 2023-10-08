@@ -13,3 +13,4 @@ Supplementary scripts:
 - `split.py`: Test/Train split
 - `tif_to_jpeg.py`: Changing tif files to jpeg for easy visualization of images
 - `flip_color.py`: Using color palette chaging methods to visualize and inspect noisy images to get a better view of cells
+- `images`: Directory containing relevant images of experiments
