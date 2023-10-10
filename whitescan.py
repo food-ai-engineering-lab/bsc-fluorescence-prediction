@@ -20,11 +20,24 @@ whitescan = (whitescan3 + whitescan2 + whitescan1)/3
 img = Image.open('/mnt/projects/sinhasa3/pax_data/Pax7/Pax7-5-1.jpg')
 img = np.array(img)
 
-diff = whitescan - img
+# Average whitescan normalization
+# diff = whitescan - img
+# diff[diff<0] = 0
+# print(diff.shape)
+# diff = diff.astype(np.uint8)
+
+# Average whitescan normalization 2 (usual)
+# diff = img - whitescan
+# diff[diff<0] = 0
+# print(diff.shape)
+# diff = diff.astype(np.uint8)
+
+# Consecutive subtraction
+diff = img - whitescan1 - whitescan2 - whitescan3
 diff[diff<0] = 0
 print(diff.shape)
 diff = diff.astype(np.uint8)
 
 # cv2.imwrite('whitescan_trial1.jpg', diff)
 diff_img = Image.fromarray(diff)
-diff_img.save('whitescan_trial1(PIL).jpg')
+diff_img.save('whitescan_trial1_con.jpg')
