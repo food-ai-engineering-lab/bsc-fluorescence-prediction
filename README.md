@@ -5,6 +5,7 @@ Supplementary scripts:
 - `contrast.py`: Preprocessing the image data to make the contrast better and the image sharper
 - `dump_array.py`: Dump array into a txt view for manual inspection
 - `eval.py`: Evaluation script including several different parameters like MSE, SSIM, and Pearson Correlation Coefficient
+- `flip_color.py`: Using color palette chaging methods to visualize and inspect noisy images to get a better view of cells
 - `jpg_to_tif.py`: Changing jpg files to tif format
 - `make_csv.py`: Script to iterate raw file storage data and generate csv with file paths used by model
 - `make_gs.py`: Convert multi-channel tifs into single channel grayscale tif
@@ -12,5 +13,5 @@ Supplementary scripts:
 - `overlay.py`: Overlay two images on top of each other
 - `split.py`: Test/Train split
 - `tif_to_jpeg.py`: Changing tif files to jpeg for easy visualization of images
-- `flip_color.py`: Using color palette chaging methods to visualize and inspect noisy images to get a better view of cells
+- `whitescan.py`: Normalization of images using average whitescan (preprocessing)
 - `images`: Directory containing relevant images of experiments
