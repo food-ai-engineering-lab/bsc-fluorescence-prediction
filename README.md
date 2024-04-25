@@ -25,9 +25,17 @@
     > Relevant File: make_csv.py
 - Split into training and testing csvs
     > Relevant File: split.py
-    > Local Path to input images: /mnt/projects/sinhasa3/pax_data/BF (use gray scale tifs there)
-    > Local path to target images: /mnt/projects/sinhasa3/processed_pax7/ (Pax7), /mnt/projects/sinhasa3/whitescan_Pax7/graytifs/ (whitescan pax7), /mnt/projects/sinhasa3/whitescan_rev_Pax7/graytifs/ (reverse whitescan Pax7), /mnt/projects/sinhasa3/whitescan_DAPI/graytifs/ (whitecsan DAPI), /mnt/projects/sinhasa3/pax_data/DAPI (original DAPI)
-    > Local path to model outputs: /mnt/projects/sinhasa3/tifs_DAPI_whitescan (whitescan DAPI), /mnt/projects/sinhasa3/tifs_DAPI (original DAPI)
+    - Local Path to input images: 
+        - /mnt/projects/sinhasa3/pax_data/BF (use gray scale tifs there)
+    - Local path to target images: 
+        - /mnt/projects/sinhasa3/processed_pax7/ (Pax7) 
+        - /mnt/projects/sinhasa3/whitescan_Pax7/graytifs/ (whitescan pax7) 
+        - /mnt/projects/sinhasa3/whitescan_rev_Pax7/graytifs/ (reverse whitescan Pax7) 
+        - /mnt/projects/sinhasa3/whitescan_DAPI/graytifs/ (whitecsan DAPI) 
+        - /mnt/projects/sinhasa3/pax_data/DAPI (original DAPI)
+    - Local path to model outputs: 
+        - /mnt/projects/sinhasa3/tifs_DAPI_whitescan (whitescan DAPI) 
+        - /mnt/projects/sinhasa3/tifs_DAPI (original DAPI)
 - Run model training on train csv
 - Run model testing on test csv
 - Run evaluations on predictions
