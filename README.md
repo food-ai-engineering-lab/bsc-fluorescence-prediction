@@ -13,7 +13,7 @@
 - `overlay.py`: Overlay two images on top of each other
 - `split.py`: Test/Train split
 - `tif_to_jpeg.py`: Changing tif files to jpeg for easy visualization of images
-- `whitescan.py`: Normalization of images using average whitescan (preprocessing)
+- `background_scan.py`: Normalization of images using average whitescan (preprocessing)
 - `images`: Directory containing relevant images of experiments
 
 ### Workflow for getting results:
