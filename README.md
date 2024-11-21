@@ -1,7 +1,8 @@
 # BSC Fluorescence Prediction
 
 
-### Supplementary scripts:
+### Processing & Analysis Scripts:
+- `background_scan.py`: Normalization of images using average whitescan (preprocessing)
 - `contrast.py`: Preprocessing the image data to make the contrast better and the image sharper
 - `dump_array.py`: Dump array into a txt view for manual inspection
 - `eval.py`: Evaluation script including several different parameters like MSE, SSIM, and Pearson Correlation Coefficient
@@ -13,7 +14,7 @@
 - `overlay.py`: Overlay two images on top of each other
 - `split.py`: Test/Train split
 - `tif_to_jpeg.py`: Changing tif files to jpeg for easy visualization of images
-- `background_scan.py`: Normalization of images using average whitescan (preprocessing)
+- `visualize.ipynb`: Visualization of evaluation results
 - `images`: Directory containing relevant images of experiments
 
 ### Workflow for getting results:
@@ -24,19 +25,16 @@
 - Make a csv of all the tifs
     > Relevant File: make_csv.py
 - Split into training and testing csvs
-    > Relevant File: split.py
-    - Local Path to input images: 
-        - /mnt/projects/sinhasa3/pax_data/BF (use gray scale tifs there)
-    - Local path to target images: 
-        - /mnt/projects/sinhasa3/processed_pax7/ (Pax7) 
-        - /mnt/projects/sinhasa3/whitescan_Pax7/graytifs/ (whitescan pax7) 
-        - /mnt/projects/sinhasa3/whitescan_rev_Pax7/graytifs/ (reverse whitescan Pax7) 
-        - /mnt/projects/sinhasa3/whitescan_DAPI/graytifs/ (whitecsan DAPI) 
-        - /mnt/projects/sinhasa3/pax_data/DAPI (original DAPI)
-    - Local path to model outputs: 
-        - /mnt/projects/sinhasa3/tifs_DAPI_whitescan (whitescan DAPI) 
-        - /mnt/projects/sinhasa3/tifs_DAPI (original DAPI)
 - Run model training on train csv
 - Run model testing on test csv
 - Run evaluations on predictions
     > Relevant File: eval.py
+
+### Results
+
+![Analysis](./evaluation/Figure4.png)
+
+As shown in the figure above, MSE values increased with fluorescence denoising, indicating greater pixel-wise errors. However, visual assessment and improvements in Pearson correlation coefficient and SSIM values suggest better model performance with image pre-processing. This highlights MSE's limitations in capturing perceptual quality, spatial context, and signal-to-noise ratio, which are better addressed by SSIM. SSIM considers luminance, contrast, structure, and noise, making it more suitable for evaluating biological images.
+
+### Data
+Examples of the data is provided in the `sample_data` directory. For access to data used for our evaluations, please reach out to yijiyoon@msu.edu
