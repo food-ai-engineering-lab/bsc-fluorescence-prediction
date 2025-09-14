@@ -1,5 +1,10 @@
 # BSC Fluorescence Prediction
 
+This repository is for the article **"Fluorescent marker prediction for non-invasive optical imaging in bovine satellite cells using deep learning"**, published in Frontiers in Artificial Intelligence.
+
+- Preprint: [doi: 10.48550/arXiv.2410.13685](https://doi.org/10.48550/arXiv.2410.13685)
+- Final Paper: [doi: 10.3389/frai.2025.1577027](https://doi.org/10.3389/frai.2025.1577027)
+
 
 ### Processing & Analysis Scripts:
 - `background_scan.py`: Normalization of images using average whitescan (preprocessing)
